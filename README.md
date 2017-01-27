@@ -28,6 +28,8 @@ You can change default stars, size, buttons's color, active's color and display 
 		text: true,
 		rating: 3.5 //for edit purpose
 	});
+	
+//If you wish to use this inside of user's edit page, simple pass {rating: 'user's rating value'} into it
 ```
 
 ```php
