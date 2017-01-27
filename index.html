@@ -1,0 +1,40 @@
+<link href="https://fonts.googleapis.com/css?family=Heebo:100,300,500" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link href="css/main.css" type="text/css" rel="stylesheet" />
+
+<link href="src/j-rating-advance/j-rating-advance.css" type="text/css" rel="stylesheet" />
+<script src="src/j-rating-advance/j-rating-advance.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $("#rating1").jRatingAdvance({
+		size: "18px",
+		buttons_color: "purple",
+		active_color: "red",
+		text: true,
+		rating: 3.5
+	});
+	
+	$("#rating2").jRatingAdvance();
+});
+</script>
+
+<div class="container">
+	<div class="row">
+    	<div class="col-sm-12">
+        	<span class="title">⋆ J-RATiNG-ADVANCE ⋆</span>
+            <p class="description">This plugin required jQuery, Bootstrap.<br />(under MIT Licence)</p>
+        </div>
+    </div>
+	<div class="row">
+    	<div class="col-sm-12">
+            <b>Rating 1: </b><div id="rating1"></div>
+        </div>
+        <div class="col-sm-12">
+        	<br />
+            <b>Rating 2: </b>
+            <div id="rating2"></div>
+        </div>
+    </div>
+</div>
